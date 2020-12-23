@@ -53,7 +53,7 @@ function getQuestions() {
     var currentAnswer = currentQuestion.choices;
     questionTitle.textContent = currentQuestion.title; 
     rightAnswer = currentQuestion.answer;
-    
+
     // cycles through all questions 1 at a time
     for (i = 0; i < currentAnswer.length ; i++){
     
@@ -66,6 +66,8 @@ function getQuestions() {
     }
     
   }
+
+
   
 choices.addEventListener("click", function(event){
 

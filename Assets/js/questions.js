@@ -1,35 +1,40 @@
 // list of all questions, choices, and answers
 var questions = [
     {
-      title: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      title: "Thanos originally cared about the infinity stones for:",
+      choices: ["restarting the universe", "to appeal to Lady Death", "to be the most powerful being in the multiverse", "to kill the Avengers"],
+      answer: "to appeal to Lady Death"
     },
     {
-      title: "The condition in an if / else statement is enclosed within ____.",
-      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-      answer: "parentheses"
+      title: "Why can't anyone besides Thor pickup his hammer?",
+      choices: ["Because they're not strong enough", "Because they're not a God like Thor", "Because they're not worthy", "Because they have their own weapons"],
+      answer: "Because they're not worthy"
     },
     {
-      title: "Arrays in JavaScript can be used to store ____.",
+      title: "At which city's airport did the Avengers fight in Civil War?",
       choices: [
-        "numbers and strings",
-        "other arrays",
-        "booleans",
-        "all of the above"
+        "Leipzig, Germany",
+        "Vienna, Austria",
+        "Los Angeles, CA",
+        "New York, New York"
       ],
-      answer: "all of the above"
+      answer: "Leipzig, Germany"
     },
     {
       title:
-        "String values must be enclosed within ____ when being assigned to variables.",
-      choices: ["commas", "curly brackets", "quotes", "parentheses"],
-      answer: "quotes"
+        "At the end of the first Avengers, Tony Stark wanted to eat _____.",
+      choices: ["cheeseburgers", "shawarma", "a big juicy steak", "falafel"],
+      answer: "shawarma"
     },
     {
       title:
-        "A very useful tool used during development and debugging for printing content to the debugger is:",
-      choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
-      answer: "console.log"
+        "Where are Tony Stark's cheeseburgers from in Iron Man I?",
+      choices: ["Burger King", "McDonalds", "homemade", "In N Out"],
+      answer: "Burger King"
+    }, 
+    {
+      title: "What burough of New York is Steve Rogers from?",
+      choices: ["Manhattan", "Brooklyn", "The Bronx", "Queens"], 
+      answer: "Brooklyn"
     }
   ];
