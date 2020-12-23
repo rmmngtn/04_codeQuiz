@@ -6,16 +6,11 @@ var choices = document.getElementById("choices");
 var userSelection = []; 
 var currentQues = -1;
 var rightAnswer;
-var secondsLeft = 200;
+var secondsLeft = 100;
 
 //call startQuiz function on button click 
-startBtn.onclick = startQuiz; 
-
-
-
-
-
-
+startBtn.addEventListener("click", startQuiz); 
+startBtn.addEventListener("click", setTime);
 
 
 //function for kicking off the quiz
@@ -28,8 +23,7 @@ function startQuiz() {
     questionsElement.removeAttribute("class");
     getQuestions();  
 
-}
-
+} 
 
 var timeEl = document.querySelector(".timer");
 // var mainEl = document.getElementById("main");
@@ -47,16 +41,7 @@ function setTime() {
 }
 
 
-function sendMessage() {
-  timeEl.textContent = " ";
-
-  var imgEl = document.createElement("img");
-
-  imgEl.setAttribute("src", "images/image_1.jpg");
-  mainEl.appendChild(imgEl);
-
-}
- function getQuestions() { 
+function getQuestions() { 
      currentQues++;
      choices.innerHTML = "";
     var currentQuestion = questions[currentQues]; 
@@ -80,11 +65,11 @@ choices.addEventListener("click", function(event){
 
     if(rightAnswer === event.target.textContent){
         correctAnswer++;
-        alert("You got right");
+        alert("CORRECT!");
     }
     else{
         alert("WRONNNGG");
-        timerglobal = timerglobal - 10;
+        
     }
 
 getQuestions();
