@@ -7,6 +7,7 @@ var userSelection = [];
 var currentQues = -1;
 var rightAnswer;
 var secondsLeft = 100;
+var correctAnswers = 0;
 
 //call startQuiz function on button click 
 startBtn.addEventListener("click", startQuiz); 
@@ -65,25 +66,29 @@ function getQuestions() {
       choices.appendChild(choiceBtn);
     }
     
-  }
+}
 
 
-  
-choices.addEventListener("click", function(event){
+    choices.addEventListener("click", function(event){
+        event.preventDefault();
 
-    if(rightAnswer === event.target.textContent){
-        correctAnswer++;
+    if(rightAnswer === event.target){
+        correctAnswers++;
         alert("CORRECT!");
     }
     else{
         alert("WRONNNGG");
+        secondsLeft-10;
         
     }
 
-getQuestions();
+    getQuestions();
 
 
-})
+    })
+
+
+    
 
 
 

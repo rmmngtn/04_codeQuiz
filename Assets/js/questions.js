@@ -22,19 +22,25 @@ var questions = [
     },
     {
       title:
-        "At the end of the first Avengers, Tony Stark wanted to eat _____.",
-      choices: ["cheeseburgers", "shawarma", "a big juicy steak", "falafel"],
+        "At the end of the first Avengers, Tony Stark wanted to eat _____",
+      choices: [
+          "cheeseburgers", "shawarma", "a big juicy steak", "falafel"
+        ],
       answer: "shawarma"
     },
     {
       title:
         "Where are Tony Stark's cheeseburgers from in Iron Man I?",
-      choices: ["Burger King", "McDonalds", "homemade", "In N Out"],
+      choices: [
+          "Burger King", "McDonalds", "homemade", "In N Out"
+        ],
       answer: "Burger King"
     }, 
     {
       title: "What burough of New York is Steve Rogers from?",
-      choices: ["Manhattan", "Brooklyn", "The Bronx", "Queens"], 
+      choices: [
+          "Manhattan", "Brooklyn", "The Bronx", "Queens"
+        ], 
       answer: "Brooklyn"
     }
   ];
