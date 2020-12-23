@@ -25,8 +25,9 @@ function startQuiz() {
 
 } 
 
+
+// Timer section
 var timeEl = document.querySelector(".timer");
-// var mainEl = document.getElementById("main");
 
 function setTime() {
   var timerInterval = setInterval(function() {
@@ -39,8 +40,12 @@ function setTime() {
 
   }, 1000);
 }
+// This will alert in right corner when timer hits 0
+function sendMessage() {
+    timeEl.textContent = "Time's Up!";
+}
 
-
+// gets questions from array js and puts on page
 function getQuestions() { 
      currentQues++;
      choices.innerHTML = "";
@@ -48,11 +53,12 @@ function getQuestions() {
     var currentAnswer = currentQuestion.choices;
     questionTitle.textContent = currentQuestion.title; 
     rightAnswer = currentQuestion.answer;
-
+    
+    // cycles through all questions 1 at a time
     for (i = 0; i < currentAnswer.length ; i++){
     
         var choiceBtn = document.createElement("button"); 
-        choiceBtn.setAttribute("class", "choice");   
+        choiceBtn.setAttribute("class", "choices");   
       choiceBtn.textContent = i + 1 + ". " + currentAnswer[i];
 
       // display on the page
