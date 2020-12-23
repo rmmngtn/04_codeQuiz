@@ -54,13 +54,14 @@ function getQuestions() {
     var currentAnswer = currentQuestion.choices;
     questionTitle.textContent = currentQuestion.title; 
     rightAnswer = currentQuestion.answer;
+    console.log(rightAnswer);
 
     // cycles through all questions 1 at a time
     for (i = 0; i < currentAnswer.length ; i++){
     
         var choiceBtn = document.createElement("button"); 
         choiceBtn.setAttribute("class", "choices");   
-      choiceBtn.textContent = i + 1 + ". " + currentAnswer[i];
+      choiceBtn.textContent = currentAnswer[i];
 
       // display on the page
       choices.appendChild(choiceBtn);
@@ -68,13 +69,13 @@ function getQuestions() {
     
 }
 
-
     choices.addEventListener("click", function(event){
-        event.preventDefault();
-
-    if(rightAnswer === event.target){
+       console.log(rightAnswer); 
+        console.log(event.target.textContent);
+    if(rightAnswer === event.target.textContent){
         correctAnswers++;
         alert("CORRECT!");
+        
     }
     else{
         alert("WRONNNGG");
@@ -88,7 +89,6 @@ function getQuestions() {
     })
 
 
-    
 
 
 
